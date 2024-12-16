@@ -1,0 +1,20 @@
+[project]
+name = "lox"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "lox",
+    "ruff>=0.8.3",
+]
+
+[tool.uv.sources]
+lox = { workspace = true }
+
+[tool.pyright]
+include = ["lox"]
+extraPaths = ["."]
